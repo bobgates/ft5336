@@ -1,16 +1,28 @@
 [package]
 name = "ft5336"
 version = "0.1.0"
-authors = "bobgates"
+authors = ["bobgates"]
 edition = "2021"
 categories = ["embedded", "hardware-support", "no-std"]
-description = "Platform agnostic driver for FT5883 touch screen driver used on STM32F746 Discovery board built using the embedded-hal"
-keywords = ["embedded-hal"]
+description = "Platform agnostic driver for FT5336 touch screen driver used on the STM32F746 Discovery board built using the embedded-hal"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/JoshMcguigan/tsl256x"
+repository = "https://github.com/bobgates/ft5336"
+keywords = [
+    "embedded-hal",
+    "embedded-hal-driver",
+    "FT5663",
+    "touchscreen",
+]
 readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 embedded-hal = "0.2.1"
+panic-semihosting = "0.5.2"
+cortex-m = "0.7"
+
+[dev-dependencies]
+cortex-m-rt = ">=0.6.15, <0.8"
+rtt-target = { version = "0.3.1", features = ["cortex-m"] }
+stm32f7xx-hal = {version = "0.6.0", features = ["stm32f746"]}
