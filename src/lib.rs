@@ -181,7 +181,7 @@ pub struct GestureInit<I2C> {
 
 /// I wasn't able to get gestures to work. I suspect something is required in
 /// the control register, but I don't know what. Also, this STM page (for nominally the same device):
-/// https://github.com/ryankurte/stm32-base/blob/master/drivers/BSP/Components/ft5336/ft5336.c
+/// <https://github.com/ryankurte/stm32-base/blob/master/drivers/BSP/Components/ft5336/ft5336.c>
 /// has a different set of gestures available to the list above.
 impl<'b, I2C, E> GestureInit<I2C>
 where

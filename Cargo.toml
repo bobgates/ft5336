@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = ["bobgates"]
 edition = "2021"
 categories = ["embedded", "hardware-support", "no-std"]
-description = "Platform agnostic driver for FT5336 touch screen driver used on the STM32F746 Discovery board built using the embedded-hal"
+description = "A platform agnostic driver for the FT5336 touch screen driver used on the STM32F746 Discovery board,  built using the embedded-hal"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/bobgates/ft5336"
 keywords = [
@@ -14,8 +14,6 @@ keywords = [
     "touchscreen",
 ]
 readme = "README.md"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 embedded-hal = "0.2.1"
