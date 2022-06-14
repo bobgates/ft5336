@@ -17,10 +17,10 @@ readme = "README.md"
 
 [dependencies]
 embedded-hal = "0.2.1"
-panic-semihosting = "0.5.2"
 cortex-m = "0.7"
 
 [dev-dependencies]
 cortex-m-rt = ">=0.6.15, <0.8"
 rtt-target = { version = "0.3.1", features = ["cortex-m"] }
 stm32f7xx-hal = {version = "0.6.0", features = ["stm32f746"]}
+panic-semihosting = "0.5.2"

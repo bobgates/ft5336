@@ -8,9 +8,6 @@
 #![deny(warnings)]
 #![no_std]
 
-#[allow(unused_imports)]
-use panic_semihosting;
-
 const FT5336_DEV_MODE_REG: u8 = 0x00;
 const FT5336_DEV_MODE_BIT_MASK: u8 = 0x70;
 const FT5336_DEV_MODE_BIT_POSITION: u8 = 4;
