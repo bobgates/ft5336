@@ -13,6 +13,9 @@ use stm32f7xx_hal::{
     rcc::{HSEClock, HSEClockMode, Rcc},
 };
 
+#[allow(unused_imports)]
+use panic_semihosting;
+
 extern crate ft5336;
 
 /// A simple example to connect to the FT5336 crate and access it for
